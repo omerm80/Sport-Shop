@@ -1,0 +1,10 @@
+.card
+{
+    margin: 1%;
+}
+.card-body{
+height:50%;
+}
+.card-img-top{
+    height:40%;
+    }

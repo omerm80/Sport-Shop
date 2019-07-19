@@ -1,0 +1,21 @@
+
+<div class="cartList">
+  <div class="row">   
+    <div class="card" style="width:14rem"  fxFlexAlign="stretch" *ngFor="let cartItem of cartItems">
+
+      <img class="card-img-top" [src]="cartItem.image" alt="Card image cap">
+          
+          <div class="card-body">
+              <h5 class="card-title" >{{cartItem.name}} </h5>
+              <p>price: {{cartItem.price}} NIS</p>
+              <p>quantity : {{cartItem.quantity}}</p>
+            </div>
+            <div class="thumbnail"><button (click)="plusOneItem(cartItem.id)"> <a class="close">+</a></button>
+              <div class="thumbnail"><button (click)="minusOneItem(cartItem.id)"> <a class="close">-</a></button>
+
+            <div class="thumbnail"><button (click)="removeProduct(cartItem.id)"> <a class="close">×</a></button>
+</div>
+          </div> 
+    </div>
+    </div>
+<p>price of cart is: {{priceOfCart}}</p>
